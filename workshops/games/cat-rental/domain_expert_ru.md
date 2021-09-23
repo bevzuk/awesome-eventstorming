@@ -1,41 +1,42 @@
 # Воркшоп по Event Storming - Аренда котов
 
-## Domain Expert - Omniscient
+## Доменный эксперт — общая информация
 
-You are the cofounder of games rental chain-store, that has been founded 10 years ago. Till now, you were offering offline services of board games rental in 30 stationary rental offices located in whole country.
+Вы — владелец успешного бизнеса по аренде котов, который был основан 10 лет назад. У вас есть 30 магазинов по всей стране, в которых любители котов могут арендовать себе домашнего любимца. До сих пор ваш бизнес успешно управляется вручную.
 
-Due to increased competitiveness in the rental market you decided to create IT system to support your business. You hired a group of computer specialists, who asked you to participate in some kind of a workshop, to share all the required knowledge with them in the fastest possible way. Sounds cool!
+Ваши конкуренты не дремлют, повсюду создаются кафе с котами, собаками и даже енотами. Чтобы опередить конкурентов, вы хотите создать IT систему, которая поможет развивать бизнес. Вы наняли группу компьютерщиков и они пригласили вас поучаствовать в каком-то странном мероприятии, типа воркшопа, на котором вы поделитесть с ними своими знаниями удобным и быстрым способом. Звучит неплохо!
 
-Besides the implementation of the system dedicated for offline / stationary rental offices you want to open the new channel over the Internet to allow your customers to browse the games available in your stores, reserve the games and charge the pre-paid accounts. In the process of company digitalization, the elements will be associated with integration with external business intelligence system, to reach even higher advantage over the competitors.
+Несмотря на то, что ваш имеющийся бизнес построен на стационарных офлайновых точках аренды котов, вы хотите создать новый канал продаж через интернет, чтобы вашим клиентам было удобнее выбирать котов, резервировать их и оплачивать аренду. В процессе диджитализации компании вы хотите интегрироваться с внешней системой BI, чтобы у конкурентов не было шансов.
+ 
+Помогите айтишникам. Расскажите все, что знаете про свой бизнес. Если они спросят о чем-то, чего нет в описании ниже — импровизируйте, дайте наилучший ответ, который сможете придумать. Помните, что это всего лишь воркшоп, у нас немного времени, так что постарайтесь сдерживать свою фантазию :)
 
-Try to help the IT specialists. Share your knowledge. If they ask the question about the requirement, that you will not find in the notes below - try to answer up to your best knowledge. Remember, it is a workshop and we have limited amount of time - so, do not go too far with your imagination. :)
+Постарайтесь вместе с командой создать общий язык. Можно создать словарик часто используемых слов. Термины долджны быть понятны всем участникам. Когда будете писать стикеры во время сессии Event Storming, используйте этот словарь, чтобы названия были непротиворечивыми.
 
-Try to convince the team to create the common language for describing the things. Maybe create a dictionary of the frequently used words. Naming convention must be understandable for everyone. During the event storming session use the consistent vocabulary on the stickers.
+__Никому не показывайте эту инструкцию. Объясните требования, описанные ниже, своими словами. Перефразируйте их.__
 
-__Do not provide this paper to anyone. Explain the requirements below in your own words. Paraphrase it.__
+Ниже информация, которую вы собрали с коллегами, когда готовились к воркшопу.
 
-Below, we put information, that you collected with your colleagues in order to prepare for the workshop.
+## Бизнес
 
-## Business
+* Мы хотим создать систему для сети магазинов аренды котов.
+* Помните, что это сеть из нескольких магазинов, а не единственный магазин.
+* В каждом магазине разный набор котов.
+* Чтобы контролировать количество на складе мы отслеживаем метрики: Общее количество котов (на складе + в аренде), Количество на складе, Количество в аренде, Зарезервированное количество.
+* Когда мы сдали кота в аренду, нужно изменить доступное количество котов на складе.
+* На сегодня у нас открыто 30 магазинов аренды в 20 городах страны.
+* В каждом магазине есть администратор, который ведет учет. Это всегда один из сотрудников магазина.
+* Во всей сети есть 1 глобальный администратор, который может заводить новые магазины в системе.
 
-* We want to create the system for games-rental chain store.
-* Remember, it is a chain store, not a single rental office.
-* Each stationary rental office has different games available on the warehouse stock.
-* We use following values in terms of controlling the warehouse stocks: quantity of the games (on stock + rented), quantity on stock, quantity rented, quantity reserved. 
-* When we rent the game we need to control the available quantities.
-* Currently, we have 30 stationary rental offices in 20 different cities in whole country.
-* Each stationary rental office has different local administrator, that takes care about the system. It is always one of the employees in the local store.
-* In the chain-store we have 1 global administrator, that is allowed to create the new local stores in the system.
+## Коты
 
-## Products / Games
+* Мы сдаем котов в аренду.
+* Все коты привиты и чипированы
+* У каждого кота есть ошейник с кличкой.
+* На каждом ошейнике напечатан штрих-код с уникальным номером. В магазине есть сканер штрих-кодов.
+* Сканер штрих-кодов работает как обычная клавиатура. Он подключается к компьютру по USB порту, мы сканируем код и результат (число) вводится в компьютер.
+* Иногда наши клиенты возвращают больных или сильно встревоженных котов. Бывают, что у животных находим блох. Это большая проблема нашего бизнеса.
 
-* We rent the board games.
-* All the products are being identified in the system by SKU numbers. Also. each product has its own descriptive name, which is used by customers.
-* All the products have EAN numbers assigned. We use these numbers to scan the barcodes with the barcodes scanner that we have in all of the stores.
-* Barcode scanner works exactly the same as typical keyboard. You connect it to USB or PS/2 port, you can scan the barcode, in result the barcode's value is being written in the computer.
-* Sometimes our customers return damaged games. Sometimes they lose some element of the game (like pawn or card). It is a big problem in our business.
-
-## Prices
+## Цены
 
 * Prices are associated to the products.
 * Each product has the only one price in the whole chain-store.
