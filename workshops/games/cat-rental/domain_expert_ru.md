@@ -38,19 +38,20 @@ __Никому не показывайте эту инструкцию. Объя
 
 ## Цены
 
-* Prices are associated to the products.
-* Each product has the only one price in the whole chain-store.
-* Sometimes, there is a need to apply some value or percent discounts.
-* We receive all the payments in EUR.
-* We are thinking about the possibility of adding the discount codes to the system. However, it is not a must.
-* Each game is being rented for 14 days by default.
-* If our client wants to keep the game for 30 days then he needs to pay 10,00 EUR more. However, it must be paid on the first day in the moment of renting the game.
-* Extension of the rental period is being printed on the fiscal receipt as a separate position. It is named “Extension of the rental period”.
-* If customer postpones the rental then we add him to the List of Debtors and we calculate the penalty.
-  * up to 5 days of delay - 20,00 EUR,
-  * up to 20 days of delay - 100,00 EUR,
-  * 20 days of delay and more - 300,00 EUR,
-* Debtor cannot rent the next games as long as he is on our List of Debtors. He can pay the penalty and then we delete him from the list.
+* У каждой породы котов своя цена.
+* Цены на котов одинаковые во всей сети.
+* Иногда мы делаем скидки на определенную сумму или процент.
+* Все платежи принимаются только в рублях.
+* Мы думаем о том, чтобы ввести промокоды в систему, но это не обязательно.
+* Срок аренды по умолчанию — 14 дней.
+* Если клиент хочет оставить кота на 30 дней, ему нужно доплатить 1000 р. во время оформления аренды.
+* Продление аренды оформляется в чеке отдельной позицией с названием "Продление срока аренды".
+* Если клиент задерживает кота дольше срока, мы добавляем его в Список Должников и начисляем штрафы.
+  * До 5 дней - 1500 р.
+  * До 20 дней - 10000 р.
+  * Более 20 дней - 25000 р.
+* Клиент не может брать других котов в аренду, пока он в Списке Должников. 
+* Чтобы удалить клиента из Списка Должников, он должен вернуть кота и погасить задолженность.
 
 ## Offline / Stationary rental office
 
