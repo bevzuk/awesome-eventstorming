@@ -66,25 +66,25 @@ __Никому не показывайте эту инструкцию. Объя
 
 ## Онлайн магазин
 
-* Customer can sign up and sign in.
-* Customer can browse the games by category.
-* Customer can see the details of specified game and read about it.
-* Customer can reserve the game and pick it up in the offline rental store.
-* The length of the reservation is 2 days.
-* After the reservation, we deliver the game to the offline rental store within 1 hour (even when the game is not available on the warehouse stock of the chosen offline store, but the game is available in the other offline store).
-* If client does not pick up the game within 2 days then we cancel the reservation and the game becomes available for the other customers.
-* Reservation is free. However, we must implement some solution to avoid the situation, when some kids reserve the games over and over the game, and they destroy our business. 
-* Customer can charge top up his own prepaid account and then use it for purchasing the rentals.
-* Payments are being handled by external payments gateway.
-* We do not send the games to our customers. It is required to pick up the game in offline stationary rental office.
-* When customer picks up the game then we charge the prepaid account or the payment in offline stationary rental office is required.
-* That would be great for the users to receive some email and SMS notifications.
+* Клиент может зарегистрироватья и зайти в онлайн магазин.
+* Клиент может просматривать доступных котов, сгруппированных по породам.
+* Клиент может посмотреть детали конкретного кота с его фотографией, описанием характера, родословной и отзывами предыдущих клиентов.
+* Клиент может зарезервировать понравившегося ему кота в выбранном офлайн магазине.
+* Максимальный срок резерва — 2 дня.
+* После резерва мы привозим кота в выбранный магазин в течение 1 часа, если понравившегося кота нет в выбранном магазине, но есть в другом.
+* Если клиент не забирает кота в течение 2 дней, резерв отменяется и кот становится доступным для других клиентов.
+* Мы не берем денег за резервирование. Однако, надо подумать как избежать ситуации, если дети-хулиганы зарезервируют всех котов и сломают нам бизнес.
+* Клиент может пополнить свой счет в онлайн магазине и использовать его для оплаты аренды.
+* Платежи проводятся через внешний платежный шлюз.
+* Мы не доставляем котов. Клиент сам забирает кота в магазине.
+* Когда клиент приходит за котом в магазин, он оплачивает аренду или расходует деньги со своего онлайн счета.
+* Было бы здорово отправлять письмо или СМС с подтверждением.
 
-## Invoices
+## Счета
 
-* We do not support invoices at all. Only receipts from our fiscal printer.
+* Никаких счетов нет. Мы печатаем только фискальный чек, этого достаточно.
 
-## In the future
+## Планы на будущее
 
 Use these elements only if the team is doing really great. If the team didn’t find out most of the standard requirements mentioned above - do not talk about the ones below.
 
