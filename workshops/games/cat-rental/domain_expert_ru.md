@@ -86,13 +86,13 @@ __Никому не показывайте эту инструкцию. Объя
 
 ## Планы на будущее
 
-Use these elements only if the team is doing really great. If the team didn’t find out most of the standard requirements mentioned above - do not talk about the ones below.
+Используйте эту информацию только если команда отлично справляется. Если команда не раскрыла стандарные требования, описанный выше — не говорите об этом.
 
-* We want to integrate external data warehouse, which will be the source for our Business Intelligence system. We will analyze the sales data, statistics for each game, statistics for each localisation.
-* We are thinking about renting the computer and console games.
-* We are thinking about selling the licenses for the games (we call it - digital products).
-* If the customer likes the game a lot - he can buy it.
-  * Before buying the game, it is a must to rent the game.
-* It is possible to buy the game only in offline stationary rental store. It not possible in online store.
+* Мы хотим сынтегрироваться с внешней системой хранения данных, которая будет источником нашей BI системы. Мы будем анализировать данные по продажам, статистику по котам и породам, рейтинг клиентов.
+* Мы думаем про аренду собак и енотов-полоскунов.
+* Мы думаем про онлайн игру про домашних животных.
+* Если клиенту понравился кот, он может его купить.
+  * Перед покупкой клиент обязан взять кота в аренду.
+* Кота можно купить только в офлайн магазине. Мы не продаем котов онлайн.
 
 
