@@ -53,18 +53,18 @@ __Никому не показывайте эту инструкцию. Объя
 * Клиент не может брать других котов в аренду, пока он в Списке Должников. 
 * Чтобы удалить клиента из Списка Должников, он должен вернуть кота и погасить задолженность.
 
-## Offline / Stationary rental office
+## Офлайновый магазины аренды
 
-* In each store we have the fiscal printer. After connecting it to the computer it is possible to print the fiscal receipts from the system. 
-* Supplier of the fiscal printer delivered a library, which makes it possible to integrate it with the system in very easy way. We can share that with the IT people.
-* Customers must pay for each rental.
-* Available payment methods are:
-  * Cash,
-  * Card,
-  * Money available in the prepaid account associated with customer’s account in our online rental store.
-	* Gift voucher.
+* В каждом магазине есть фискальный принтер чеков, который подключен к компьютеру. На нем система печатает чеки.
+* Поставщик принтера чеков предоставляет библиотеку, с которой наша система может легко интегрироваться.
+* Заказчик оплачивает аренду каждого кота отдельно.
+* Доступные способы оплаты:
+  * Наличные
+  * Карта
+  * Деньги, доступные на онлайн счете клиента
+	* Подарочный сертификат
 
-## Online rental store
+## Онлайн магазин
 
 * Customer can sign up and sign in.
 * Customer can browse the games by category.
